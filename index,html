@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariella Garmaise - Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #add8e6;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ariella Garmaise</h1>
+        <nav>
+            <a href="index.html">Bio</a>
+            <a href="writing-credits.html">Writing Credits</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>About Ariella Garmaise</h2>
+        <p>Ariella Garmaise is a fiction writer and journalist with a passion for storytelling. With a career spanning over a decade, she has contributed to numerous renowned publications and penned several short stories and essays that explore the complexities of human relationships and identity.</p>
+        <p>Her work has been recognized for its emotional depth and unique voice. Ariella's writing invites readers to reflect on the intricacies of life and to look at familiar situations from new perspectives.</p>
+        <p>In addition to her creative work, Ariella frequently contributes to literary magazines, where she shares her insights on writing, culture, and the power of narrative.</p>
+    </section>
+
+</body>
+</html>

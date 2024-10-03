@@ -1,62 +1,110 @@
 <!DOCTYPE html>
-<html class="w-full">
+<html class="w-full h-screen flex items-start justify-center">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ariella Garmaise</title>
     <style type="text/css">
       @font-face {
-        font-family: 'Rasa';
-        src: url('assets/fonts/Rasa-VariableFont_wght.ttf') format('truetype');
-        font-weight: 100 1000;
-      }
-
-<!DOCTYPE html>
-<html class="w-full">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ariella Garmaise</title>
-    <style type="text/css">
-      @font-face {
-        font-family: 'Rasa';
-        src: url('assets/fonts/Rasa-VariableFont_wght.ttf') format('truetype');
-        font-weight: 100 1000;
+        font-family: 'Baskerville';
+        src: url('assets/fonts/Baskerville.ttf') format('truetype');
       }
 
       html, body {
-        font-family: Rasa;
-        background-color: #ffffff;
-        color: #4a5568;
+        font-family: 'Baskerville', serif; /* Set Baskerville for all text */
+        background-color: #f9fafb; /* Light background */
+        color: #0047ab; /* Updated blue color */
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
+        justify-content: flex-start; /* Align to the top */
+        margin-top: 2rem;
+        padding: 1rem;
+        max-width: 800px; /* Set a maximum width for the container */
+        text-align: left; /* Align text to the left */
+      }
+
+      .title {
+        font-family: 'Baskerville', serif; /* Ensure title uses Baskerville */
+        font-size: 4.5rem; /* Set a specific font size */
+        line-height: 1.2;
+        width: 100%; /* Full width to align with profile */
+        color: #0047ab; /* Updated blue color */
+        margin-bottom: 2rem; /* Add margin below the title */
+        font-weight: normal; /* Remove bold */
+        text-transform: none; /* Remove uppercase */
+        font-style: italic; /* Italicize the title */
+      }
+
+      .profile {
+        display: flex;
+        align-items: flex-end; /* Align items to the bottom */
+        justify-content: flex-start; /* Align items to the start */
+        flex-direction: row; /* Image on the left */
+        width: 100%; /* Make profile take the full width */
+        max-width: 800px; /* Match the title width */
+      }
+
+      .profile img {
+        width: 200px; /* Set a fixed width for the image */
+        height: auto;
+        border-radius: 4px;
+        margin-right: 2rem; /* Space between text and image */
+      }
+
+      .profile-text {
+        flex: 1; /* Allow text to grow and take available space */
+        text-align: left; /* Align text to the left */
+      }
+
+      .profile-text p {
+        font-family: 'Baskerville', serif; /* Ensure paragraphs use Baskerville */
+        font-size: 1.2rem; /* Font size for paragraphs */
+        line-height: 1.8; /* Line height for readability */
+        margin: 0; /* Reset margin */
+        color: #0047ab; /* Updated blue color for paragraphs */
+      }
+
+      .contact {
+        font-family: 'Baskerville', serif; /* Ensure contact uses Baskerville */
+        font-size: 1rem; /* Font size for contact info */
+        margin-top: 1rem; /* Margin above contact info */
+        color: #0047ab; /* Contact color */
+      }
+
+      .contact a {
+        font-family: 'Baskerville', serif; /* Ensure link uses Baskerville */
+        text-decoration: none; /* No underline for links */
+        color: #0047ab; /* Updated blue for email link */
       }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="md:flex md:w-3/5 w-4/5 mx-auto mt-8 text-slate-700">
-    <div class="md:grow md:mr-3">
-      <a href="./index.html" class="hover:underline hover:decoration-blue-500">
-        <h1 class="md:mb-0 mb-2 w-max text-3xl">
-          Ariella Garmaise
-        </h1>
-      </a>
+  <body>
+    <div class="container">
+      <h1 class="title">Ariella Garmaise</h1> <!-- Title updated to be italicized and non-bolded -->
 
-      <ul class="md:mt-4 md:block md:space-x-0 flex space-x-2">
-        <li class="flex items-center">
-          <div class="w-1 h-1 rounded-full mr-1 bg-blue-500"></div>
-          <a href="./index.html">Home</a>
-        </li>
-        <li class="group flex items-center">
-          <div class="w-1 h-1 rounded-full mr-1 bg-gray-500 group-hover:bg-blue-500"></div>
-          <a href="./writing-credits.html">Writing Credits</a>
-        </li>
-      </ul>
-    </div>
+      <div class="profile">
+        <img src="assets/input.jpg" alt="Ariella Garmaise" />
 
-    <div class="md:shrink md:mt-16 mt-4">
-      <div class="w-40 h-40 border-4 border-blue-500 rounded-full overflow-hidden mx-auto shadow-lg">
-        <img src="assets/profile-placeholder.png" alt="Ariella Garmaise" class="object-cover w-full h-full" />
+        <div class="profile-text">
+          <p>
+            I'm Ariella, a Toronto-based writer and assistant editor at <em>The Walrus</em>, Canada's leading national magazine. My literary and cultural criticism has been published in <em>The Washington Post</em>, <em>The Financial Times</em>, <em>The Los Angeles Review of Books</em>, and <em>Literary Hub</em>. I write about art, culture, books about women, books by women, etc.
+          </p>
+          <p style="margin-top: 1rem;"></p> <!-- New empty line added -->
+          <p class="contact">
+            <a href="mailto:ariella.garmaise@gmail.com">ariella.garmaise@gmail.com</a>
+          </p>
+        </div>
       </div>
-      <p class="mt-6 text-center">
-        Ariella Garmaise is a writer based in New York City. She has contributed to several renowned publications, and her work spans across essays, fiction, and reviews. In her free time, Ariella enjoys exploring the intersection of technology and creativity. Her latest project involves writing screenplays and short stories that are inspired by modern life.
-     
+    </div>
+  </body>
+</html>
+
+
 
